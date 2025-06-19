@@ -2,7 +2,7 @@ import React from 'react'
 
 function MyButton({title}) {
   return (
-    <button className='my-button'>
+    <button className="btn btn-moving-gradient btn-moving-gradient--green"> 
         {title}
     </button>
   )
