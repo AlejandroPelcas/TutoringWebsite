@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import MyButton from './MyButton'
+import Sign from './Sign'
 import './App.css'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,15 +12,12 @@ function App() {
   return (
     <>
       <div>
+        <Sign title='STEM'> </Sign>
+        <p class="text-5xl text-gray-900 dark:text-white italic">Made Simple</p>
+        <br></br>
+        <br></br>
         <MyButton title="Book Now"></MyButton>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
       </div>
-      <h1 className='text-green-700'>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

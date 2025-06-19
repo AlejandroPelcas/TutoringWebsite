@@ -56,4 +56,33 @@
 .btn:hover .btn-slide-show-text1 {  margin-left: 65px;}  
 .btn-moving-gradient {  height: 55px;  width: 200px;  font-size: 16px;  font-weight: 600;  color: rgb(255, 255, 255);  cursor: pointer;  border: none;  background-size: 300% 100%;  border-radius: 50px;}  
 .btn-moving-gradient:hover {  transition: 0.5s ease-in-out;  background-position: 100% 0px;}  
-.btn-moving-gradient--green {  background-image: linear-gradient(90deg, rgb(130, 237, 155), rgb(130, 230, 237), rgb(130, 237, 191), rgb(128, 237, 153));  box-shadow: rgb(130, 230, 237) 0px 4px 15px 0px;}  
+.btn-moving-gradient--green {  background-image: linear-gradient(90deg, rgb(130, 237, 155), rgb(130, 230, 237), rgb(130, 237, 191), rgb(128, 237, 153));  box-shadow: rgb(130, 230, 237) 0px 4px 15px 0px;} 
+
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.sign {
+  transition: all 0.5s;
+  -webkit-text-stroke: 1px black;
+  font-variation-settings: "wght" 500, "ital" 1;
+  font-size: 15rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 8px 8px 0px #4ade80,
+    15px 15px 0px black,
+    20px 20px 0px black,
+    25px 25px 0px black;
+  cursor: pointer;
+}
+
+.sign:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
