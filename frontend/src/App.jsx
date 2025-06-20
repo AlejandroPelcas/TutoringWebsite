@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import MyButton from './MyButton'
 import Sign from './Sign'
 import './App.css'
@@ -16,8 +14,16 @@ function App() {
         <p class="text-5xl text-gray-900 dark:text-white italic">Made Simple</p>
         <br></br>
         <br></br>
-        <MyButton title="Book Now"></MyButton>
+        <MyButton title="Book Now" link="https://calendly.com/alejandro-pelcas/introduction-tell-me-what-i-can-help-you-with"></MyButton>
       </div>
+      <br></br>
+      <div>
+        Socials:
+        <br></br>
+        <MyButton title="LinkedIn" link="https://www.linkedin.com/in/alejandro-pelcastre/"> </MyButton>
+    
+      </div>
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

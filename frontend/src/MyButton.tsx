@@ -1,9 +1,13 @@
 import React from 'react'
 
-function MyButton({title}) {
+function MyButton({title, link}) {
+    const handleClick = () => {
+        window.location.href = link; // can be internal or external
+      };
   return (
-    <button className="btn btn-moving-gradient btn-moving-gradient--green"> 
+    <button onClick={handleClick} className="btn btn-moving-gradient btn-moving-gradient--green"> 
         {title}
+
     </button>
   )
 }
